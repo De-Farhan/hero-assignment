@@ -1,0 +1,291 @@
+/* ========= ::: index of css ::: ==========
+
+1. global variable define css
+2. common css
+3. banner section
+4. mission section
+5. develop section
+6. community section
+7. contact section
+8. footer section
+
+=============== ::: ==== ::: =============== */
+
+/* ========== global variable define css ========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* ========== common css ========== */
+:root {
+  --primary-color: #800080;
+  --secondary-color: #228b22;
+  --shade-left: rgba(233, 255, 219, 0.5);
+  --shade-center: rgba(209, 159, 232, 0.5);
+  --shade-right: rgba(236, 235, 189, 0.3);
+  --dark-jet: #343434;
+  --dark-black: #080808;
+  --white: #ffffff;
+  --white-light: #c7c7c7;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: calc(0.75rem + 0.3vw);
+  font-weight: 500;
+  line-height: 1.5;
+  color: var(--dark-jet);
+}
+
+a,
+a:hover,
+a:focus {
+  margin: 0;
+  text-decoration: none;
+}
+ol,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+p {
+  margin: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--dark-jet);
+  font-weight: 600;
+  line-height: 1.2;
+  margin: 0;
+}
+h1 {
+  font-size: calc(1.5rem + 2vw);
+}
+h2 {
+  font-size: calc(1rem + 1.5vw);
+}
+h3 {
+  font-size: calc(1rem + 1vw);
+}
+h4 {
+  font-size: calc(0.5rem + 1vw);
+}
+section {
+  margin-bottom: calc(1.5rem + 3vw);
+}
+.section-title {
+  margin-bottom: calc(0.5rem + 3vw);
+  text-align: center;
+}
+.container {
+  width: calc(100% - 20%);
+  margin: 0 auto;
+}
+.btn {
+  display: inline-block;
+  font-size: calc(0.75rem + 0.3vw);
+  color: var(--white);
+  background: var(--secondary-color);
+  padding: 0.5rem 1.5rem;
+  border-radius: 5px;
+}
+.uniqe-text {
+  color: var(--primary-color);
+}
+/* ========== banner section ========== */
+#banner-sec .ban-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+#banner-sec .banner-text,
+#banner-sec .banner-img {
+  width: 45%;
+  align-self: center;
+}
+#banner-sec .banner-title .uniqe-text {
+  display: block;
+}
+#banner-sec .banner-title {
+  position: relative;
+}
+#banner-sec .banner-title::before {
+  content: "";
+  width: 4px;
+  height: calc(4rem + 3vw);
+  background: var(--secondary-color);
+  border-radius: 3px;
+  position: absolute;
+  top: 50%;
+  left: -0.75rem;
+  transform: translateY(-50%);
+}
+
+#banner-sec .banner-text p {
+  margin: 1rem 0;
+}
+#banner-sec .banner-text .btn {
+  margin-bottom: 1rem;
+}
+#banner-sec .banner-text .scroll-text {
+  display: block;
+}
+#banner-sec .banner-img img {
+  width: 90%;
+  margin: 0 auto;
+}
+/* ========== mission section ========== */
+#mission-sec .mission-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+#mission-sec .section-title {
+  color: var(--dark-black);
+}
+#mission-sec .mission-card {
+  width: 32%;
+  padding: 1.5rem 2rem;
+  border-radius: 1rem;
+  background: var(--shade-left);
+}
+#mission-sec .mission-card:nth-last-of-type(2) {
+  background: var(--shade-center);
+}
+#mission-sec .mission-card:nth-last-of-type(1) {
+  background: var(--shade-right);
+}
+#mission-sec .mission-card .cd-img {
+  margin-left: -0.75rem;
+  margin-top: -0.5rem;
+}
+#mission-sec .mission-card .cd-img img {
+  width: 40%;
+}
+
+#mission-sec .mission-card .cd-title {
+  color: var(--dark-black);
+  margin: 0.5rem 0;
+}
+/* ========== develop section ========== */
+#develop-sec {
+  background: url(images/shapes/shape-9.png) no-repeat left;
+  background-size: 20%;
+}
+#develop-sec .develop-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+#develop-sec .develop-img {
+  width: 40%;
+  align-self: center;
+}
+#develop-sec .develop-text {
+  width: 55%;
+  align-self: center;
+}
+#develop-sec .develop-text .section-title {
+  text-align: left;
+  margin-bottom: calc((0.5rem + 3vw) / 2.5);
+}
+#develop-sec .develop-text .section-title .uniqe-text {
+  color: inherit;
+  display: block;
+}
+#develop-sec .develop-text p {
+  margin-bottom: 1rem;
+}
+/* ========== community section ========== */
+#community-sec {
+  background: url(images/shapes/shape-6.png) no-repeat right;
+  background-size: 20%;
+  background-position-y: calc((80% + 3vw) + 5%);
+  padding-bottom: calc(4rem + 3vw);
+  margin-bottom: calc((1.5rem + 3vw) / 2.5);
+}
+#community-sec .community-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+#community-sec .community-img {
+  width: 40%;
+  align-self: center;
+}
+#community-sec .community-text {
+  width: 55%;
+  align-self: center;
+}
+#community-sec .community-text .section-title {
+  text-align: left;
+  margin-bottom: calc((0.5rem + 3vw) / 2.5);
+}
+#community-sec .community-text .section-title .uniqe-text {
+  color: inherit;
+  display: block;
+}
+#community-sec .community-text p {
+  margin-bottom: 1rem;
+}
+
+/* ========== contact section ========== */
+#contact-sec form {
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem;
+  background: var(--shade-right);
+}
+#contact-sec form .form-item-one {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+#contact-sec form .form-item-one #name,
+#contact-sec form .form-item-one #email {
+  width: 48%;
+}
+#contact-sec form .form-item-one #name,
+#contact-sec form .form-item-one #email,
+#contact-sec form .form-item-two #messege {
+  padding: 1rem 0 1rem 0.75rem;
+  border-radius: 5px;
+  border: 2px solid var(--white-light);
+}
+#contact-sec form .form-item-one #name:focus,
+#contact-sec form .form-item-one #email:focus,
+#contact-sec form .form-item-two #messege:focus {
+  outline: 0;
+}
+
+#contact-sec form .form-item-two {
+  width: 100%;
+}
+#contact-sec form .form-item-two #messege {
+  width: 100%;
+  height: 15rem;
+  resize: none;
+}
+#contact-sec form button {
+  border: none;
+  padding: 1rem 2rem;
+  margin-top: 1rem;
+}
+/* ========== footer section ========== */
+footer {
+  background: var(--dark-black);
+  color: var(--white-light);
+  text-align: center;
+  padding: 2rem 0;
+}
+footer h2 {
+  font-family: "Kaushan Script", cursive;
+  color: var(--white-light);
+  margin-bottom: 1rem;
+}
